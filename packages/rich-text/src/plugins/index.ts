@@ -19,6 +19,8 @@ import { createHeadingPlugin } from './Heading';
 import { createHrPlugin } from './Hr';
 import { createHyperlinkPlugin } from './Hyperlink';
 import { createListPlugin } from './List';
+// import { createAlignPlugin } from './Align';
+import { createAlignPlugin } from './Align2';
 import { createMarksPlugin } from './Marks';
 import { createNormalizerPlugin } from './Normalizer';
 import { createParagraphPlugin } from './Paragraph';
@@ -50,6 +52,7 @@ export const getPlugins = (
   // Block Elements
   createParagraphPlugin(),
   createListPlugin(),
+  // createAlignPlugin(),
   createHrPlugin(),
   createHeadingPlugin(),
   createQuotePlugin(),
@@ -63,6 +66,9 @@ export const getPlugins = (
 
   // Marks
   createMarksPlugin(),
+
+  //Alignment
+  createAlignPlugin(),
 
   // Other
   createTrailingParagraphPlugin(),
